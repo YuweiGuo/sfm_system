@@ -1,0 +1,16 @@
+name : SfMGuoLib
+
+version : 1.6.0
+
+author : Yuwei Guo
+
+date : 2016-9-11 11:13
+
+solve the problem : 
+
+1. can not use sift and surf feature detection or extractor method in ros 
+
+change : 
+
+1. creating Class instance SFM_42Images must have a input parameter , the returm value of cv::initModule_nonfree().
+2. for not (PyramidFAST for detector and ORB for extractor) mothed, the metcher method is changed in class FeatureMachter

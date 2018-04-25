@@ -1,0 +1,18 @@
+#ifndef ICAMERAPOSCOMPUTER_H
+#define ICAMERAPOSCOMPUTER_H
+
+#include "ICameraPosComputerEssentialMethod.h"
+#include "ICameraPosComputerPnPMethod.h"
+
+#include <opencv2/opencv.hpp>
+#include <vector>
+class ICameraPosComputer : public ICameraPosComputerEssentialMethod, public ICameraPosComputerPnPMethod
+{
+public:
+    virtual bool Init(const std::vector<cv::Point2d> keypnts_good_pre, const std::vector<cv::Point2d> keypnts_good_nxt, 
+                      const std::vector<cv::DMatch> matches_good, const cv::Matx33d camera_matx) = 0;
+    virtual bool CameraPosComputerEssentialMethod() = 0;
+    virtual bool CameraPosComputerPnPMethod() = 0;
+    virtual bool GetCameraPos(cv::Matx34d camera_pos) = 0;
+};
+#endif // FEATUREMATCHER_H

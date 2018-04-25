@@ -1,0 +1,23 @@
+#ifndef SETTING_H
+#define SETTING_H
+
+#include <opencv2/opencv.hpp>
+
+/* camera setting */
+const cv::Matx33d camera_matx(1000.0,  0.0000,   640,
+                              0.0000,  1000.0,   360,
+                              0.0000,  0.0000,   1.0);
+const cv::Matx41d dist_coeff(0, 0, 0, 0);
+const int camera_fps = 60;
+
+
+/* ros node setting */
+#define AMOR_IMG_NODE_NAME "/amor/frontCam/image"
+#define SFM_MANAGER_NODE_NAME "sfm_manager"
+#define SFM_VIEWER_NODE_NAME "sfm_viwer"
+#define SFM_BA__NODE_NAME "sfm_ba"
+#define SFM_MANAGER_CLOUD_NAME "/sfm_manager/SfM_Manager_Cloud_Msg"
+#define SFM_BA_REQUEST_NAME "/sfm_ba/SfM_BA_Request_Msg"
+#define SFM_BA_CLOUD_NAME "/sfm_ba/SfM_BA_Cloud_Msg"
+
+#endif // SETTING_H

@@ -1,0 +1,12 @@
+#point cloud msg
+#status: true make update, false make refresch
+bool update_flag
+# number of points
+int64 pnt_num
+# XYZRGB point cloud 
+BasicPoint[] pnt_cloud
+# camera info
+BasicPoint camera_position
+BasicPoint camera_up_vector
+BasicPoint camera_direction_vector
+

@@ -1,0 +1,19 @@
+#ifndef IFEATUREMATCHER_H
+#define IFEATUREMATCHER_H
+// opencv libs
+#include <opencv2/opencv.hpp>
+// standart libs
+#include <vector>
+
+class IFeatureMatcher
+{
+public:
+    virtual void Init(const cv::Mat image_pre, const cv::Mat image_nxt) = 0;
+    virtual void DoFeatureMatching() = 0;
+    virtual void GetGoodKeyPnts(std::vector<cv::KeyPoint>& keypnts_pre_good,
+                                std::vector<cv::KeyPoint>& keypnts_nxt_good) = 0;
+    virtual void GetGoodMachtes(std::vector<cv::DMatch>& matches_good) = 0;
+    virtual void GetDescriptors(cv::Mat& descriptor_pre, cv::Mat& descriptor_nxt) = 0;
+};
+
+#endif // FEATUREMATCHER_H

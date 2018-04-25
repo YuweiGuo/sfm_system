@@ -1,0 +1,19 @@
+# basic point msg
+
+# object pnt
+float64 obj_x
+float64 obj_y
+float64 obj_z
+
+# img pre pnt
+float64 img_pre_x
+float64 img_pre_y
+
+# img nxt pnt
+float64 img_nxt_x
+float64 img_nxt_y
+
+# obj_color
+int32 obj_r
+int32 obj_g
+int32 obj_b

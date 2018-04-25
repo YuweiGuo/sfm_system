@@ -1,0 +1,11 @@
+#ifndef ICAMERAPOSCOMPUTERESSENTIALMETHOD_H
+#define ICAMERAPOSCOMPUTERESSENTIALMETHOD_H
+
+
+class ICameraPosComputerEssentialMethod 
+{
+public:
+	virtual bool CameraPosComputerEssentialMethod() = 0;
+};
+
+#endif // FEATUREMATCHER_H

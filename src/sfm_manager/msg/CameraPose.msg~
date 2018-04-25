@@ -1,0 +1,16 @@
+#camera pose
+
+float64 v00
+float64 v01
+float64 v02
+float64 v03
+
+float64 v10
+float64 v11
+float64 v12
+float64 v13
+
+float64 v20
+float64 v21
+float64 v22
+float64 v23

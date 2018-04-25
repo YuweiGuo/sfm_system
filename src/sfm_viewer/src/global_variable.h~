@@ -1,0 +1,15 @@
+#ifndef GLOBAL_VARIABLE_H
+#define GLOBAL_VARIABLE_H
+
+/* die Namen von Node */
+#define IMG_ROS_NODE_NAME "/amor/frontCam/image"
+#define SFM_POINTSSENDER_NAME "/sfm/pointsMsg"
+#define SFM_NODE_NAME "sfm"
+#define SFM_VIEWER_NODE_NAME "sfm_viwer"
+#define SFM_INFO_TXT "./src/sfm/sfm_info/sfm_info.txt"
+#define SFM_VIEWER_REQUEST_NODE_NAME "/sfm_viewer/request"
+#define SFM_BA_POINTSSENDER_NAME "/sfm_ba/pointsMsg"
+
+#endif // GLOBAL_VARIABLE_H
+
+

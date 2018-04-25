@@ -1,0 +1,12 @@
+# model 0 ist punkte model, 1 ist meshes model
+bool model_
+
+# fuer model 0
+int64 pointNumM0_
+basicPoint[] pointsM0_
+
+#fuer model 1
+int64 pointNumM1_
+basicPoint[] pointsM1_
+int64 indexNumM1_
+basicIndex[] indexM1_

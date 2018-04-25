@@ -1,0 +1,11 @@
+#ifndef ICAMERAPOSCOMPUTERPNPMETHOD_H
+#define ICAMERAPOSCOMPUTERPNPMETHOD_H
+
+
+class ICameraPosComputerPnPMethod
+{
+public:
+	virtual bool CameraPosComputerPnPMethod() = 0;
+};
+
+#endif // FEATUREMATCHER_H
